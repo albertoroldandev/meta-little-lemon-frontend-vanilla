@@ -3,6 +3,7 @@ A basic frontend web design for the Meta Front-End Developer Professional Certif
 
 Live Preview: https://albertoroldandev.github.io/meta-little-lemon-frontend-vanilla/
 
+Preview:
 <img src="preview.png"
   alt="Preview"
   width="800">
