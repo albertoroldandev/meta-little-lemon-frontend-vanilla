@@ -5,5 +5,5 @@ Live Preview: https://albertoroldandev.github.io/meta-little-lemon-frontend-vani
 
 <img src="preview.png"
   alt="Preview"
-  width="600">
+  width="800">
 </p>
