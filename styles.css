@@ -1,0 +1,389 @@
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('./assets/fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('./assets/fonts/OpenSans-Bold.ttf');
+}
+@font-face {
+    font-family: 'Merienda-Regular';
+    src: url('./assets/fonts/Merienda-Regular.ttf');
+}
+@font-face {
+    font-family: 'Merienda-Bold';
+    src: url('./assets/fonts/Merienda-Bold.ttf');
+}
+@font-face {
+    font-family: 'Chango';
+    src: url('./assets/fonts/Chango-Regular.ttf');
+}
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    box-sizing: content-box;
+    max-width: 1240px;
+    margin: auto;
+    padding: 0 20px;
+    font-family: OpenSans-Regular, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+}
+input, select{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.header {
+    height: 80px;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-image {
+    height: 60px;
+}
+.header-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    font-size: 1.2em;
+    color: #495E57;
+    font-family: Merienda-Bold, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.header-nav ul a {
+    font-size: 1.2em;
+    color: #495E57;
+    font-family: Merienda-Bold, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header-nav ul a:hover{
+    color: rgb(27, 176, 126);
+}
+.hero {
+    background-image: url(./assets/images/background.jpg);
+    background-size: cover;
+    background-position: 50% 20%;
+    border-radius: 20px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 90px;
+    margin-bottom: 60px;
+    padding-top: 60px;
+}
+.hero-title {
+    font-size: 3.2em;
+    color: white;
+    font-family: Merienda-Regular, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.hero-image {
+    width: 175px;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    padding: 0 150px;
+    gap: 90px;
+    margin-bottom: 90px;
+}
+.menu-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 0;
+}
+.menu-title, .reservations-title, .about-title {
+    font-family: Merienda-Regular, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.7em;
+    color: #495E57;
+    text-align: center;
+}
+.menu-description, .reservations-description, .about-description {
+    font-size: 1.3em;
+}
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.menu-item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    gap: 15px;
+}
+.menu-item-info--alt {
+    text-align: left;
+}
+.menu-item-title {
+    font-family: Chango, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.5em;
+    color: #F4CE14;
+    margin: 0;
+}
+.menu-item-image {
+    width: 400px;
+    height: 260px;
+    border-radius: 20px;
+}
+.reservations-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 0 0 20px 0;
+}
+.reservations {
+    display: flex;
+    flex-direction: column;
+    padding: 0 150px;
+    margin-bottom: 90px;
+    gap: 30px;
+}
+.reservations-form {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+.reservations-form-input {
+    border-radius: 10px;
+    border: 2px solid #495E57;
+    height: 40px;
+    width: 200px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.reservations-form-button {
+    background-color: #495E57;
+    color: white;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    padding: 0 150px;
+    margin-bottom: 90px;
+    gap: 30px;
+}
+.about-flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+}
+.about-image {
+    width: 300px;
+    border-radius: 20px;
+}
+.footer {
+    height: 120px;
+    background-color: #495E57;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #F4CE14;
+}
+.footer-image {
+    height: 60px;
+}
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    font-size: 1.2em;
+}
+@media screen and (max-width: 1200px) {
+    .hero-title {
+        font-size: 2.5em;
+    }
+    .menu, .reservations, .about {
+        padding: 0 60px;
+    }
+    .menu-description, .reservations-description, .about-description {
+        font-size: 1.2em;
+    }
+    .reservations {
+        gap: 40px;
+    }
+    .footer {
+        flex-direction: column;
+        font-size: 0.8em;
+        gap: 20px;
+        justify-content: center;
+    }
+    .footer-image {
+        height: 40px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .hero-title {
+        font-size: 2em;
+    }
+    .hero-image {
+        width: 160px;
+    }
+    .menu {
+        gap: 60px;
+    }
+    .menu-title, .reservations-title, .about-title, .menu-item-title {
+        font-size: 2em;
+    }
+    .menu-description, .reservations-description, .about-description {
+        font-size: 1em;
+    }
+    .menu-item-image {
+        width: 300px;
+        height: 200px;
+    }
+    .menu-item-description {
+        font-size: 0.9em;
+    }
+    .reservations {
+        gap: 15px;
+    }
+    .about-image {
+        width: 200px;
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    .header {
+        flex-direction: column;
+        height: 80px;
+    }
+    .header-image {
+        height: 40px;
+    }
+    .hero {
+        gap: 60px;
+        height: 400px;
+        margin-bottom: 30px;
+    }
+    .hero-title {
+        font-size: 1.8em;
+    }
+    .hero-image {
+        width: 120px;
+    }
+    .menu, .reservations, .about {
+        padding: 0;
+        margin-bottom: 60px;
+    }
+    .menu {
+        gap: 40px;
+    }
+    .menu-item {
+        gap: 20px;
+    }
+    .menu-item-description {
+        font-size: 0.8em;
+    }
+    .footer {
+        height: 160px;
+    }
+    .footer ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .footer-image {
+        height: 40px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .hero-title {
+        font-size: 1.5em;
+    }
+    .hero-image {
+        width: 100px;
+    }
+    .hero {
+        gap: 80px;
+    }
+    .menu, .reservations, .about {
+        padding: 0 60px;
+    }
+    .menu-item-description {
+        display: none;
+    }
+    .menu-item-image {
+        width: 150px;
+        height: 100px;
+    }
+    .reservations {
+        align-items: center;
+    }
+    .reservations-form {
+        flex-direction: column;
+    }
+    .about-flex-container {
+        flex-direction: column;
+    }
+    .about-image {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .hero {
+        height: 200px;
+        padding-top: 30px;
+        gap: 30px;
+    }
+    .hero-image {
+        width: 60px;
+    }
+    .hero-title {
+        font-size: 1em;
+    }
+    .menu-item-title {
+        font-size: 1.5em;
+    }
+    .menu, .reservations, .about {
+        padding: 0;
+    }
+    .menu-item-description {
+        display: none;
+    }
+    .menu-item-image {
+        width: 150px;
+        height: 100px;
+    }
+    .reservations {
+        align-items: center;
+    }
+    .reservations-form {
+        flex-direction: column;
+    }
+    .menu-header {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .hero-title {
+        font-size: 0.8em;
+    }
+    .header-nav ul a {
+        font-size: 0.8em;
+    }
+}
